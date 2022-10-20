@@ -7,10 +7,17 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AddbookComponent } from './addbook/addbook.component';
 import { FormsModule } from '@angular/forms';
+import { ViewbooksComponent } from './viewbooks/viewbooks.component';
 
 const routes:Routes=[
   {
-
+    path:"",component:NavbarComponent
+  },
+  {
+    path:"add",component:AddbookComponent
+  },
+  {
+    path:"view",component:ViewbooksComponent
   }
 ]
 
@@ -18,7 +25,8 @@ const routes:Routes=[
   declarations: [
     AppComponent,
     NavbarComponent,
-    AddbookComponent
+    AddbookComponent,
+    ViewbooksComponent
   ],
   imports: [
     BrowserModule,
