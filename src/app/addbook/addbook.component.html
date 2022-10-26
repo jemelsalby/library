@@ -1,33 +1,27 @@
-<app-navbar></app-navbar>
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+           
             <div class="row g-3">
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-                    <label for="Name">Name</label>
-                    <input type="Name" placeholder="Name" class="form-control" name="name"[(ngModel)]="name">
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="">Book Name</label>
+                    <input type="text" class="form-control"  name="bookName"  [(ngModel)]="bookName">
                 </div>
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-                    <label for="Ingrediants">Author</label>
-                    <input type="text" name="author"[(ngModel)]="author" id=""  class="form-control">
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="">Author Name</label>
+                    <input type="text" class="form-control"  name="authorName"  [(ngModel)]="authorName">
                 </div>
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-                    <label for="Langauge">Language</label>
-                    <select name="language"[(ngModel)]="language" id="" class="form-control">
-                        <option value="English">English</option>
-                        <option value="Malayalam">Malayalam</option>
-                        <option value="Hindi">Hindi</option>
-                        <option value="Arabic">Arabic</option>
-                    </select>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="">Publish Year</label>
+                    <input type="text" class="form-control" name="publishYear"  [(ngModel)]="publishYear">
                 </div>
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-                    <label for="Published Year">Published Year</label>
-                    <input type="text"  class="form-control" name="pubyear"[(ngModel)]="pubyear">
-                </div>
+               
+               
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <button class="btn btn-info" (click)="readValue()">SUBMIT</button>
+                    <button class="btn btn-primary" (click)="readvalues()">Submit</button>
                 </div>
             </div>
+
         </div>
     </div>
 </div>

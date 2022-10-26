@@ -9,31 +9,26 @@ import { ApiService } from '../api.service';
 export class AddbookComponent implements OnInit {
 
   constructor(private myapi:ApiService) { }
-  name=""
-  author=""
-  language=""
-  pubyear=""
+  bookName=""
+  authorName=""
+  publishYear=""
 
-  readValue=()=>{
+  readvalues=()=>{
     let data={
-      "name":this.name,
-      "author":this.author,
-      "langauge":this.language,
-      "pubyear":this.pubyear
+      "bookName":this.bookName,
+      "authorName":this.authorName,
+      "publishYear":this.publishYear,
+     
     }
     console.log(data)
-    this.myapi.addBooks(data).subscribe(
+    this.myapi.addBook(data).subscribe(
       (response)=>{
-        console.log("tests")
+        alert("Data Added")
       }
     )
-    alert("Successfully added")
-    this.name=""
-    this.author=""
-    this.language=""
-    this.pubyear=""
-  }
 
+
+  }
   ngOnInit(): void {
   }
 

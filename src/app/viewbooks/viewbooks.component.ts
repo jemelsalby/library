@@ -8,18 +8,17 @@ import { ApiService } from '../api.service';
 })
 export class ViewbooksComponent implements OnInit {
 
-  constructor(private myapi:ApiService) { 
+  constructor(private myapi:ApiService) {
     this.fetchData()
-  }
-
-  fetchData=()=>{
-    this.myapi.viewBooks().subscribe(
+   }
+   fetchData=()=>{
+    this.myapi.viewBook().subscribe(
       (data)=>{
-        this.libraryData=data
+        this.viewData=data
       }
     )
-  }
-libraryData:any=[]
+   }
+viewData:any=[]
   ngOnInit(): void {
   }
 

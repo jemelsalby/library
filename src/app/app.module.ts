@@ -8,6 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AddbookComponent } from './addbook/addbook.component';
 import { FormsModule } from '@angular/forms';
 import { ViewbooksComponent } from './viewbooks/viewbooks.component';
+import { SearchComponent } from './search/search.component';
 
 const routes:Routes=[
   {
@@ -26,7 +27,8 @@ const routes:Routes=[
     AppComponent,
     NavbarComponent,
     AddbookComponent,
-    ViewbooksComponent
+    ViewbooksComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

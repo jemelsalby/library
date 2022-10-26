@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+           
+            <div class="row g-3">
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="">Book Name</label>
+                    <input type="text" class="form-control" name="bookName" [(ngModel)]="bookName">
+                </div>
+               
+            
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <button class="btn btn-primary" (click)="readvalues()" >Search</button>
+                </div>
+
+                <div *ngFor="let i of viewdata">
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg col-xl-12 col-xxl-12">
+                      
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg col-xl-12 col-xxl-12">
+                        <label for="">Book Name</label>
+                        <input type="text" class="form-control" value="{{i.bookName}}" [(ngModel)]="i.bookName">
+                    </div>
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg col-xl-12 col-xxl-12">
+                        <label for="">Author Name</label>
+                        <input type="text" class="form-control"value="{{i.authorName}}"[(ngModel)]="i.authorName">
+                    </div>
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg col-xl-12 col-xxl-12">
+                        <label for="">year</label>
+                        <input type="text" class="form-control" value="{{i.publishYear}}"[(ngModel)]="i.publishYear">
+                    </div>
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <button class="btn btn-primary" (click)="updateBook()">update</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
